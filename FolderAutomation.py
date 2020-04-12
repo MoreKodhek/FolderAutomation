@@ -13,6 +13,7 @@ class MyHandler(FileSystemEventHandler):
             new_destination = folder_destination + '/' + filename
             os.rename(src, new_destination)
 
+# show the folders to track
 folder_to_track = "C:\\Users\\morek\\Downloads"
 folder_destination = "C:\\Users\\morek\\Downloads\\New"
 event_handler = MyHandler()
